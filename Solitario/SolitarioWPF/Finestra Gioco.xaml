@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         
         PreviewMouseRightButtonDown="AnnullaSelezione_ConClick_TastoDestro"
-        Title="Finestra_Gioco" Height="700" Width="800" WindowStartupLocation="CenterScreen">
+        Title="Finestra_Gioco" Height="700" Width="800" WindowStartupLocation="CenterScreen" Icon="/RETRO.jpg">
 
     <Window.Resources>
         <Storyboard x:Key="Storyboard_DAMazzo_APozzo">
@@ -245,7 +245,7 @@
                     </TransformGroup>
                 </Image.RenderTransform>
             </Image>
-            <Label x:Name="lbl_DeselezioneCarta" Content="Hai selezionato la carta sbagliata? Premi il tasto destro per deselezionarla!" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="344,5,0,0"/>
+            <Label x:Name="lbl_DeselezioneCarta" Content="Hai selezionato la carta sbagliata? Premi il tasto destro per deselezionarla!" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White" Margin="0,-3,0,0"/>
 
         </Grid>
     </Viewbox>

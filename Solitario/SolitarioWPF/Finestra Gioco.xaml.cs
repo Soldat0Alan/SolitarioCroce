@@ -209,14 +209,11 @@ namespace Solitario_A_Croce_WPF
 
                         AggiornaImmagini();
                     }
-                    else
-                    {
-                        MessageBox.Show("Seleziona un mazzetto diverso per lo spostamento della carta.", "Avviso", MessageBoxButton.OK, MessageBoxImage.Warning);
-                    }
+                    
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Errore durante lo scambio della carta: {ex.Message}", "Errore", MessageBoxButton.OK, MessageBoxImage.Error);
+                    
                 }
                 // Resetta lo stato della selezione
                 _primoBottoneSelezionato = false;               
@@ -380,8 +377,6 @@ namespace Solitario_A_Croce_WPF
             _immagineAnimazione.Visibility = Visibility.Collapsed;
             AggiornaImmagini();
         }
-
-      
 
         private void AnnullaSelezione_ConClick_TastoDestro(object sender, MouseButtonEventArgs e)
         {
